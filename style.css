@@ -1,0 +1,208 @@
+/* =====================================
+   MODERN EMERALD GREEN DESIGN
+===================================== */
+
+:root {
+    --royal-navy: #064e3b;
+    --royal-blue: #047857;
+    --royal-accent: #10b981;
+    --soft-bg: #ecfdf5;
+    --heading-blue: #065f46;
+    --card-radius: 1.2rem;
+    --card-shadow: 0 10px 30px rgba(6, 78, 59, 0.10);
+}
+
+/* GENERAL */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #064e3b 0%, #047857 45%, #34d399 100%);
+    background-attachment: fixed;
+    color: #334155;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
+.portal-navbar {
+    background: rgba(6, 46, 36, 0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.portal-navbar .nav-link {
+    color: #d1fae5;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.portal-navbar .nav-link:hover,
+.portal-navbar .nav-link.active {
+    color: #ffffff;
+}
+
+/* HERO BANNER */
+
+.portal-hero {
+    background: transparent;
+    padding: 3.5rem 0 5rem;
+    text-align: center;
+}
+
+.hero-kicker {
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    color: #d1fae5;
+}
+
+/* DASHBOARD CARDS */
+
+.dashboard-cards-wrapper {
+    margin-top: -2rem;
+}
+
+.portal-card {
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: var(--card-radius);
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 38px rgba(6,78,59,0.18);
+}
+
+.text-primary-heading {
+    color: var(--heading-blue);
+}
+
+/* CARD ICONS */
+
+.card-icon-badge {
+    width: 54px;
+    height: 54px;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    color: #047857;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    box-shadow: inset 0 2px 4px rgba(255,255,255,0.7);
+}
+
+.card-icon-badge.icon-amber {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    color: #d97706;
+}
+
+/* STUDENT PROFILE */
+
+.profile-info-list li {
+    font-size: 0.95rem;
+}
+
+.status-active-badge {
+    background: #059669;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 0.4em 0.8em;
+    border-radius: 2rem;
+}
+
+/* ANNOUNCEMENTS */
+
+.announcement-callout {
+    border-left: 4px solid #34d399;
+    padding: 0.6rem 0 0.6rem 1rem;
+    background: #ecfdf5;
+    border-radius: 0 0.7rem 0.7rem 0;
+    transition: all 0.3s ease;
+}
+
+.announcement-callout:hover {
+    border-left-color: #047857;
+    background: #d1fae5;
+}
+
+/* SUBJECT CHECKLIST */
+
+.subject-checklist li {
+    font-size: 0.95rem;
+    padding: 0.4rem 0;
+}
+
+/* FORM CONTROLS */
+
+.form-control-lg-custom {
+    border: 1px solid #a7f3d0;
+    border-radius: 0.75rem;
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+    color: #334155;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.form-control-lg-custom:focus {
+    border-color: #059669;
+    box-shadow: 0 0 0 0.25rem rgba(16,185,129,0.18);
+    outline: none;
+}
+
+/* SUBMIT BUTTON */
+
+.btn-submit-custom {
+    background: linear-gradient(135deg, #059669, #047857);
+    border: none;
+    border-radius: 0.75rem;
+    color: white;
+    box-shadow: 0 5px 15px rgba(5,150,105,0.25);
+    transition: all 0.3s ease;
+}
+
+.btn-submit-custom:hover {
+    background: linear-gradient(135deg, #047857, #065f46);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(5,150,105,0.35);
+}
+
+/* CLEAR BUTTON */
+
+.btn-clear-custom {
+    border: 1px solid #a7f3d0;
+    background: #ffffff;
+    color: #047857;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.btn-clear-custom:hover {
+    background: #ecfdf5;
+    color: #064e3b;
+}
+
+/* SECTION SPACING */
+
+section[id],
+div[id] {
+    scroll-margin-top: 5.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    background: rgba(255,255,255,0.97) !important;
+    backdrop-filter: blur(10px);
+    color: #334155;
+}
